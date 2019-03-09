@@ -17,12 +17,12 @@ float weather[NUM_LEDS][3];
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUM_LEDS, DATA_PIN, NEO_GRB + NEO_KHZ800);
 
 int LEDTimer = 0;
-int LEDUpdateTime = 10;
+int LEDUpdateTime = 25;
 
 //Weather
 int WeatherID = 0;
 int WeatherTimer = 0;
-int WeatherUpdateTime = 600000;
+int WeatherUpdateTime = 180000;
 
 //gets called when WiFiManager enters configuration mode
 void configModeCallback (WiFiManager *myWiFiManager) {
